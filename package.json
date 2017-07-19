@@ -33,6 +33,7 @@
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "hamburgers": "^0.9.1",
     "js-loader": "^0.1.1",
     "json-loader": "^0.5.4",
     "less-compiler": "^0.2.4",
