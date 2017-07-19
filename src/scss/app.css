@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url(/home/robert/webpack-config-intern-master/node_modules/bootstrap/dist/css/bootstrap.css);
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
@@ -7,12 +6,74 @@ body {
 .header {
   background-image: url("../assets/header-bg.png");
   padding-top: 30px;
+  padding-bottom: 200px;
+  color: white;
+  z-index: 0;
 }
 
-.content {
+.main-content {
+  margin-top: 100px;
+  background-color: white;
+  color: black;
+}
+
+.bottom-content {
+  margin-top: 100px;
+  background-image: url("../assets/header-bg.png");
   color: white;
 }
 
+.footer {
+  height: 60px;
+  padding-top: 10px;
+  background-image: url("../assets/header-bg.png");
+  filter: brightness(80%);
+}
+
+.content {
+  background-color: white;
+  position: relative;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid black;
+  color: black;
+  top: -200px;
+  width: 250px;
+  height: 320px;
+  z-index: 1;
+}
+
 .logo-box {
+  padding: 2px;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
   padding: 10px;
+}
+
+.text-box {
+  z-index: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.widget-box {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid lightgray;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+}
+
+.slider-image-box {
+  padding: 10px;
+}
+
+hr {
+  background-color: lightslategray;
 }
