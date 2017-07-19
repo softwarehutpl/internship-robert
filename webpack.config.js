@@ -28,13 +28,14 @@ module.exports = function (env) {
           fallback: 'style-loader',
           use: 'css-loader',
         })
-      }, {
-        test: /\.less$/,
+      },{
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'less-loader'],
+          use: ['css-loader', 'sass-loader'],
         })
-      }, {
+      },
+       {
         test: /\.(jpg|png|svg)$/,
         use: [{
           loader: 'file-loader',
@@ -55,6 +56,12 @@ module.exports = function (env) {
         template: SRC_DIR + '/index.html',
       }),
       new webpack.NamedModulesPlugin(),
+      
+      new webpack.ProvidePlugin({ // inject ES5 modules as global vars
+        $: 'jquery',
+        jQuery: 'jquery','window.jQuery': 'jquery',
+        Tether: 'tether'
+      })
     ],
   };
 };
