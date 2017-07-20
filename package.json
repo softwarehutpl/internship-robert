@@ -39,7 +39,8 @@
     "less-compiler": "^0.2.4",
     "sass": "^1.0.0-beta.2",
     "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack-hot-middleware": "^2.18.2"
+    "webpack-hot-middleware": "^2.18.2",
+    "yarn-install": "^0.3.0"
   },
   "repository": {
     "type": "git",

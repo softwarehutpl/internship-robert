@@ -4,6 +4,16 @@
         <meta charset="utf-8">
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myNav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script> 
     </head>
 
     <body>
@@ -22,17 +32,6 @@
                 </div>
             </div>
 
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myNav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-            </script> 
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-12 col-xs-12">
@@ -48,9 +47,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-12 col-xs-12">
-                        <div class="slider-image-box">
-                            <img src="${require(`assets/slider-image.png`)}" />
-                        </div> 
+                      
                     </div>
                 </div>
             </div>
@@ -115,16 +112,13 @@
                         <div class="img-box">
                             <p style="color:dimgrey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
                             <p>Duis iaculis ac nulla sed placerat. Donec libero enim,
-                               consequat non tempus ac, molestie vitae dolor.
                                In sollicitudin laoreet magna, malesuada molestie massa convallis id.</p> 
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 ">
                         <div class="img-box">
-                            <div class="overlayT">
 							    <a href="#"><img src="${require(`assets/img-recent1.png`)}" alt="Taj Mahal"></a>
 							    <!--<a class="link" href="#"><span class="icon"><i class="icon-search"></i><p>zobacz album</p></span></a> -->
-                            </div>
                         </div>        
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
@@ -141,22 +135,22 @@
             </div> 
             <div class="container">   
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down">
+                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down hidden-sm-down">
                         <div class="img-box">
                            
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down">
+                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down ">
                         <div class="img-box">
                             <img src="${require(`assets/img-recent3.png`)}" />
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down">
+                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down ">
                         <div class="img-box">
                             <img src="${require(`assets/img-recent1.png`)}" />
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down">
+                    <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down hidden-sm-down">
                         <div class="img-box">
                             <img src="${require(`assets/img-recent2.png`)}" />
                         </div>
