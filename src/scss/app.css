@@ -5,7 +5,7 @@ body {
 
 .header {
   background-image: url("../assets/header-bg.png");
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 150px;
   color: white;
   z-index: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 .main-content {
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: white;
   color: black;
 }
@@ -26,6 +26,7 @@ body {
 
 .footer {
   height: 60px;
+  color: white;
   padding-top: 10px;
   background-image: url("../assets/header-bg.png");
   filter: brightness(80%);
@@ -35,10 +36,10 @@ body {
   background-color: white;
   position: relative;
   margin: 5px;
+  margin-bottom: 10px;
   padding: 15px;
   color: black;
-  top: -200px;
-  width: 260px;
+  top: -150px;
   height: 330px;
   z-index: 1;
   -webkit-box-shadow: 1px -14px 38px -16px rgba(0, 0, 0, 0.39);
@@ -47,13 +48,34 @@ body {
 }
 
 .logo-box {
-  padding: 2px;
+  padding-top: 5px;
+  border-right: 1px dashed grey;
 }
 
-.img-box {
-  display: flex;
-  justify-content: center;
+/*
+.img-box{
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 18px;
+}*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-image-box {
   padding: 10px;
+}
+
+.widget-box {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid lightgray;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
 }
 
 .text-box {
@@ -63,49 +85,48 @@ body {
   padding: 10px;
 }
 
-.widget-box {
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid lightgray;
-  width: 40px;
-  height: 40px;
-  background-color: gray;
-}
-
-.slider-image-box {
-  padding: 10px;
+.footer-box {
+  padding-top: 7px;
 }
 
 hr {
   background-color: lightslategray;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+hr.style1 {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+  border: 0;
 }
 
-/* Add a black background color to the top navigation */
+/* background color navigation */
 .topnav {
   background-image: url("../assets/header-bg.png");
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav img {
   float: left;
-  display: block;
+  display: flex;
+  border-radius: 7px 7px 7px 7px;
+}
+
+.topnav a {
+  float: right;
+  display: flex;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 7px 7px 7px 7px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
+  text-decoration: none;
   color: black;
 }
 
@@ -141,3 +162,63 @@ img {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .content {
+    z-index: 1;
+  }
+  .slider-image-box {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+  }
+}
+
+.img-box {
+  margin: auto;
+  justify-content: center;
+  padding: 10px;
+  padding-left: 18px;
+}
+
+/*
+.overlayT
+{
+	position: relative;
+	width: 220px;
+	height: 200px;
+}
+
+.overlayT .link
+{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #27a38d;
+	left: 0px;
+	top: 0px;
+	opacity: 0.9;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.overlayT:hover .link
+{
+	opacity: 0.9;
+}
+
+.icon
+{
+	display: block;
+	top: 25%;
+	position: relative;
+	font-size: 72px;
+}
+
+.icon p
+{
+	font-size: 20px;
+}
+
+*/
