@@ -12,8 +12,35 @@
                 } else {
                     x.className = "topnav";
                 }
-            }
-        </script> 
+            }   
+        </script>
+        <script>
+var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+        </script>
+
+
     </head>
 
     <body>
@@ -47,7 +74,40 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-12 col-xs-12">
-                      
+                        <!--<div class="slider-image-box"> -->
+                            <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="${require(`assets/slider-image.png`)}" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="${require(`assets/wifi.png`)}" style="width:80%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="${require(`assets/imac.png`)}" style="width:80%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="${require(`assets/laptop.png`)}" style="width:80%">
+  </div>
+
+<div class="mySlides fade">
+    <img src="${require(`assets/editor.png`)}" style="width:80%">
+  </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
