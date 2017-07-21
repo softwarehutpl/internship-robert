@@ -34,7 +34,7 @@
                 slideIndex++;
                 if (slideIndex> slides.length) {slideIndex = 1} 
                 slides[slideIndex-1].style.display = "block"; 
-                setTimeout(showSlides, 3000); // Change image every 2 seconds
+                setTimeout(showSlides, 3500); // Change image every 2 seconds
             }
         </script>
     </head>
@@ -70,30 +70,30 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-12 col-xs-12">
-                        <div class="slider-image-box"> -->
+                        <div class="slider-image-box "> 
                             <div class="slideshow-container">
-                                <div class="mySlides fade">
-                                    <img src="${require(`assets/slider-image.png`)}" style="width:100%">
+                                <div class="mySlides fade" style="text-align:center;">
+                                    <img src="${require(`assets/editor.png`)}" style="width:80%; " class="image-responsive">
                                 </div>
 
-                                <div class="mySlides fade">
-                                    <img src="${require(`assets/wifi.png`)}" style="width:80%">
+                                <div class="mySlides fade" style="text-align:center;">
+                                    <img src="${require(`assets/imac.png`)}" style="width:80%; " class="image-responsive">
                                 </div>
 
-                                <div class="mySlides fade">
-                                    <img src="${require(`assets/imac.png`)}" style="width:80%">
+                                <div class="mySlides fade" style="text-align:center;">
+                                    <img src="${require(`assets/wifi.png`)}" style="width:80%; " class="image-responsive">
                                 </div>
 
-                                <div class="mySlides fade">
-                                    <img src="${require(`assets/laptop.png`)}" style="width:80%">
+                                <div class="mySlides fade" style="text-align:center;">
+                                    <img src="${require(`assets/laptop.png`)}" style="width:80%; " class="image-responsive">
                                 </div>
 
-                                <div class="mySlides fade">
-                                    <img src="${require(`assets/editor.png`)}" style="width:80%">
+                                <div class="mySlides fade" style="text-align:center;">
+                                    <img src="${require(`assets/editor.png`)}" style="width:80%;" class="image-responsive">
                                 </div>
                             </div>
                             <br>
-                            
+
                             <div style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span> 
                             <span class="dot" onclick="currentSlide(2)"></span> 
@@ -158,7 +158,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 30px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding-top: 150px;">
                         <h4 style="font-weight:bold;">Recent Work</h4> 
                         <hr class="style1">
                     </div>
@@ -170,19 +170,27 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 ">
-                        <div class="img-box">
-							    <a href="#"><img src="${require(`assets/img-recent1.png`)}" alt="Taj Mahal"></a>
-							    <!--<a class="link" href="#"><span class="icon"><i class="icon-search"></i><p>zobacz album</p></span></a> -->
-                        </div>        
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="img-box">
-                            <img src="${require(`assets/img-recent2.png`)}" />
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent1.png`)}" class="image"/>
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div>	    
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="img-box">
-                            <img src="${require(`assets/img-recent3.png`)}" />
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent2.png`)}" class="image" />
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent3.png`)}" class="image" />
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div>	 
                         </div>
                     </div>    
                 </div>
@@ -190,23 +198,32 @@
             <div class="container">   
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down hidden-sm-down">
-                        <div class="img-box">
+                        <div class="img-container img-box">
                            
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down ">
-                        <div class="img-box">
-                            <img src="${require(`assets/img-recent3.png`)}" />
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent3.png`)}" class="image"/>
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div>	    
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down ">
-                        <div class="img-box">
-                            <img src="${require(`assets/img-recent1.png`)}" />
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent1.png`)}" class="image"/>
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div>	    
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 hidden-xs-down hidden-sm-down">
-                        <div class="img-box">
-                            <img src="${require(`assets/img-recent2.png`)}" />
+                        <div class="img-container img-box">
+                            <img src="${require(`assets/img-recent2.png`)}" class="image"/>
+                            <div class="middle">
+                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                            </div>	    
                         </div>
                     </div>                      
                 </div>

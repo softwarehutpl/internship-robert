@@ -14,3 +14,4 @@ import 'bootstrap';
 
 //import 'siema';
 
+//import'./js/slider.js';
