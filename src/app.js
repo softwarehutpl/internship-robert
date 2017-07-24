@@ -2,16 +2,22 @@ import 'html-loader?interpolate!./index.html';
 
 import 'jquery';
 
+import siema from 'siema';
+
 import './scss/app.scss';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-import 'bootstrap';
+// import 'bootstrap';
 
-//import './js/myNav.js';
+import './js/myNav.js';
 
-//import siema from 'siema';
+import'./js/slider.js';
 
-//import 'siema';
+var mySiema = new siema();
 
-//import'./js/slider.js';
+const destroy = document.querySelector('.destroy');
+const init = document.querySelector('.init');
+
+destroy.addEventListener('click', () => mySiema.destroy());
+init.addEventListener('click', () => mySiema.init());

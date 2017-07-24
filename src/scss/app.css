@@ -56,13 +56,17 @@ body {
 .img-box {
   text-align: center;
   margin: auto;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 .img-container {
   position: relative;
   width: 100%;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
 .image {
@@ -85,11 +89,16 @@ body {
 }
 
 .img-container:hover .image {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .img-container:hover .middle {
-  opacity: 1;
+  opacity: 0.5;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 7px;
 }
 
 .text {
@@ -148,28 +157,65 @@ hr.style1 {
   margin-left: 20px;
 }
 
-/* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar 
 .topnav img {
-  float: left;
-  display: flex;
-  border-radius: 7px 7px 7px 7px;
-}
-
+    float: left;
+    display: flex;
+    border-radius: 7px 7px 7px 7px;
+}*/
 .topnav a {
   float: right;
   display: flex;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 18px;
   text-decoration: none;
   font-size: 17px;
-  border-radius: 7px 7px 7px 7px;
+  margin-right: 1px;
+  font-weight: bold;
+}
+
+.input-container input {
+  float: right;
+  display: flex;
+  color: white;
+  border: 0px;
+  background-color: #303030;
+  text-align: right;
+  padding: 15px 16px;
+  height: 10px;
+  width: auto;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 17px;
+  -webkit-box-shadow: inset 35px 11px 151px -14px black;
+  -moz-box-shadow: inset 35px 11px 151px -14px black;
+  box-shadow: inset 35px 11px 151px -14px black;
+}
+
+.input-container input:hover {
+  filter: brightness(50%);
+  color: white;
+}
+
+.input-container {
+  padding-top: 5px;
+  float: right;
+  width: auto;
+}
+
+.input-img {
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  right: 230px;
 }
 
 .topnav a:hover {
   background-color: #ddd;
   text-decoration: none;
   color: black;
+  border-radius: 7px 7px 7px 7px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -178,8 +224,11 @@ hr.style1 {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav a {
+    display: none;
+  }
+  .input-container {
     display: none;
   }
   .topnav a.icon {
@@ -189,7 +238,7 @@ hr.style1 {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {
     position: relative;
   }
@@ -202,6 +251,12 @@ hr.style1 {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .input-container {
+    display: none;
   }
 }
 
@@ -254,17 +309,6 @@ hr.style1 {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */

@@ -14,7 +14,7 @@
                 }
             }   
         </script>
-        <script>
+        <!--<script>
             var slideIndex = 1;
 
             function plusSlides(n) {
@@ -23,6 +23,11 @@
 
             function currentSlide(n) {
                 showSlides(slideIndex = n);
+            }
+
+            function stop(){
+                var slides = document.getElementClassName("mySlides");
+                
             }
 
             function showSlides() {
@@ -36,19 +41,21 @@
                 slides[slideIndex-1].style.display = "block"; 
                 setTimeout(showSlides, 3500); // Change image every 2 seconds
             }
-        </script>
+        </script>-->
     </head>
-
     <body>
         <div class="header">
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <img src="${require(`assets/logo.png`)}"/>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-9">
-                        <div class="topnav" id="myNav">
+                        <div class="topnav" id="myNav">                          
+                            <div class="input-container">
+                                <input type="text" id="input" value>
+                                <img src="${require(`assets/search-icon.png`)}" class="input-img">
+                            </div>
                             <a href="#home">Home</a>
                             <a href="#news">News</a>
                             <a href="#contact">Contact</a>
@@ -69,13 +76,21 @@
                             <p>Sed dignissim lacinia nunc. Curabitur tortor. Pell.tesque nibh. 
                                Aenean quam. In sceleri.ue sem at dolor. Maecenas mattis. 
                                Lorem ipsum color sa amet. Lorem ipsum color amet. Lorem ipsum color sa amet.</p>
-                           <button type="button" class="btn btn-primary">Primary</button>
+                            <button class="btn btn-primary init">Start</button>
+                            <button class="btn btn-primary destroy">Stop</button>
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-12 col-xs-12">
                         <div class="slider-image-box "> 
                             <div class="slideshow-container">
-                                <div class="mySlides fade" style="text-align:center;">
+                                <div class="siema" style="text-align: center;">
+                                    <div><img src="${require(`assets/imac.png`)}" style="width:80%;" class="image-responsive"></div>
+                                    <div><img src="${require(`assets/screen.png`)}" style="width:80%;" class="image-responsive"></div>
+                                    <div><img src="${require(`assets/wifi.png`)}" style="width:80%;" class="image-responsive"></div>
+                                    <div><img src="${require(`assets/smartphones.png`)}" style="width:80%;" class="image-responsive"></div>
+                                    <div><img src="${require(`assets/ipad.png`)}" style="width:80%;" class="image-responsive"></div>
+                                </div>
+                                <!--<div class="mySlides fade" style="text-align:center;">
                                     <img src="${require(`assets/imac.png`)}" style="width:80%; " class="image-responsive">
                                 </div>
 
@@ -93,15 +108,7 @@
 
                                 <div class="mySlides fade" style="text-align:center;">
                                     <img src="${require(`assets/ipad.png`)}" style="width:80%;" class="image-responsive">
-                                </div>
-
-                                <div class="mySlides fade" style="text-align:center;">
-                                    <img src="${require(`assets/statistics.png`)}" style="width:80%;" class="image-responsive">
-                                </div>
-
-                                <div class="mySlides fade" style="text-align:center;">
-                                    <img src="${require(`assets/layers.png`)}" style="width:80%;" class="image-responsive">
-                                </div>
+                                </div>-->
                             </div>
                             <br>
 
@@ -184,15 +191,17 @@
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent1.png`)}" class="image"/>
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
-                            </div>	    
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
+                                
+                            </div>
+                            	  
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent2.png`)}" class="image" />
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
                             </div> 
                         </div>
                     </div>
@@ -200,7 +209,7 @@
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent3.png`)}" class="image" />
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
                             </div>	 
                         </div>
                     </div>    
@@ -217,7 +226,7 @@
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent3.png`)}" class="image"/>
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
                             </div>	    
                         </div>
                     </div>
@@ -225,7 +234,7 @@
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent1.png`)}" class="image"/>
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
                             </div>	    
                         </div>
                     </div>
@@ -233,7 +242,7 @@
                         <div class="img-container img-box">
                             <img src="${require(`assets/img-recent2.png`)}" class="image"/>
                             <div class="middle">
-                                <img src="${require(`assets/magnif.png`)}" class="image"/>
+                                <img src="${require(`assets/musica-searcher.png`)}" class="image"/>
                             </div>	    
                         </div>
                     </div>                      
