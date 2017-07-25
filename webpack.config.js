@@ -28,7 +28,8 @@ module.exports = function (env) {
           fallback: 'style-loader',
           use: 'css-loader',
         })
-      },{
+      },
+      {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
